@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Software Iceland</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet"  href="../static/style/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/script/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="heading">
+				<img class="logo" src="../static/image/logo.png" height="20" width="186" alt="Software Iceland Logo">
+				<nav>
+					<ul id="menu-order" class="menu-order">
+						<li>
+							<a href="#purpose">Зачем нужен бот</a>
+						</li>
+						<li>
+							<a href="#advantage">Почему мы</a>
+						</li>
+						<li>
+							<a href="#order">Заказать</a>
+						</li>
+						<li>
+							<a href="#">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1>Лучший бот для Telegram</h1>
+			<h2>по доступной цене</h2>
+			<div class="main-btn" id="main-btn">
+				<a href="#order"><strong>Заказать бота</strong></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="scr-2">
+			<div class="container">
+				<h2 id="purpose">Зачем нужен бот</h2>
+				<div class="purpose">
+					<div class="item">
+						<div class="img">
+							<img src="../static/image/money-icon.svg" height="100" width="100" alt="">
+						</div>
+						<h3>Поможет в вашем бизнесе</h3>
+						<p>
+							У вас есть есть ресторанчик и выхотите завести бота, в котором ваши клиенты смогут заказать доставку блюд? Или вам нужен бот-магазин для ваших изделеий ручной работы? Бот станет отличной фишкой и незаменимым помощником в любом вашем бизнесе.
+						</p>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="../static/image/statistics-icon.svg" height="100" width="100" alt="">
+						</div>
+						<h3>Всегда обеспечит нужной информацией</h3>
+						<p>
+							И тут тоже крутой и вдохновляющий текст про смысл ботов и смысл жизни, просто пока мне лень шо-то придумывать. Ехал грека через реку, видит грека - в реке рак. И грека такой, я в доту не играю, отстаньте от меня. Вот такая вот офигительная история, пам-пам.
+						</p>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="../static/image/chat-icon.svg" height="100" width="100" alt="">
+						</div>
+						<h3>И многое другое</h3>
+						<p>
+							Оп оп оп оп туда-сюда обратно, тебе и мне приятно, и пускай я придурок, глупый недобакалавр но ты дутая фигура будто гена динозавр. Пау пау пау, мяу мяу мяу, три четыре сорок двадцать, шесть пятнадцать три семнадцать
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advantage">
+			<h2 id="advantage">Почему мы</h2>
+			<div class="item">
+				<div class="img">						
+					<img src="../static/image/discount-icon.png" height="80" width="80" alt="">
+				</div>
+				<div class="text">
+					<h3>Приятная цена</h3>
+					<p>есть пятнадцать три семнадцать Оп оп оп оп туда-сюда обратно, тебе и мне приятно, и пускай я придурок, глупый недобакалавр но ты дутая фигура будто гена динозавр. Пау пау пау, мяу</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="img">
+					<img src="../static/image/quality-icon.png" height="80" width="80" alt="">
+				</div>
+				<div class="text">
+					<h3>Качественная работа</h3>
+					<p>ккдинозавр. Пау пау пау, мяу мяу мяу, три четыре сорок двадцать, шес емнадцать Оп оп оп оп туда-сюда обратно, тебе и мне приятно, и пуска
+				</div>
+			</div>
+			<div class="item">
+				<div class="img">
+					<img src="../static/image/talk-icon.png" height="80" width="80" alt="">
+				</div>
+				<div class="text">
+					<h3>Непрерывный диалог с заказчиком</h3>
+					<p>кккккккккккккк кккккк к к ккккккккккккк ккккккккк к кккк к ккккккккккк к кккккккккккк Оп оп оп оп туда-сюда обратно, тебе и мне пр</p>
+				</div>
+			</div>
+		</div>
+		<div class="order">
+            <h2 id="order">Заполните форму</h2>
+            <form action="" method="post" class="form">
+                {{ form.hidden_tag() }}
+                {{ form.name(placeholder = 'Ваше имя') }}
+                {{ form.email(placeholder = 'email') }}
+                {{ form.description(placeholder = 'Опишите функционал бота, которого вы хотите получить', rows='7') }}
+                <div class="form-button">
+					{{ form.sumbit(class_="form-butt")}}
+				</div>
+            </form>
+			<h3>Или свяжитесь с одним из наших разработчиков в Telegram</h3>
+			<div class="order-btn">
+				<a href="https://telegram.org/#/im?p=@tom43" target="_blank">Написать</a>
+			</div>
+		</div>
+		
+	</main>
+</body>
+</html>
